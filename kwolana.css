@@ -1,0 +1,163 @@
+body, html {
+    height: 100%;
+    margin:0;
+    font-size: 16px;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+section a{
+    text-decoration: none;
+}
+
+section a:hover{
+    color: red;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header nav{
+    background-attachment: fixed;
+}
+nav{
+    background: blue;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 50px;
+    border-bottom: gold 5px solid;
+}
+
+nav:hover{
+    background: #35424a;
+    transition: 1.5s;
+}
+
+.ph1, .ph2, .ph3, .ph4, .ph5, .ph6{
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ph1{
+    background-image: url("bc1.jpg");
+    background-color: #111;
+    min-height: 800px;
+    margin-top: 10px;
+    background-size: 300px;
+}
+
+.ph2{
+    background-image: url("dg2.jpg");
+    background-color: #111;
+    min-height: 800px;
+    margin-top: 10px;
+    background-size: 350px;
+}
+.ph3{
+    background-image: url("to1.jpg");
+    background-color: #111;
+    min-height: 900px;
+    /* margin-top: 10px; */
+    background-size: 500px;
+}
+.ph4{
+    background-image: url("ops1.jpg");
+    background-color: #111;
+    min-height: 800px;
+    /* margin-top: 10px; */
+    background-size: 380px;
+}
+
+.ph5{
+    background-image: url("mo3.jpg");
+    background-color: #111;
+    min-height: 100%;
+    /* margin-top: 10px; */
+    background-size: 500px;
+}
+.ph6{
+    background-image: url("nca1.png");
+    background-color: #111;
+    min-height: 100%;
+    /* margin-top: 10px; */
+    background-size: 500px;
+}
+
+section{
+    text-align: center;
+    padding:50px 80px;
+    /* text-transform: uppercase; */
+}
+
+section h2{
+    text-transform: uppercase;
+}
+
+.light{
+    background-color: #fff;
+    color: #111;
+}
+.dark{
+    background-color: #111;
+    color: #fff;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #111;
+    font-size: 28px;
+    letter-spacing: 7px;
+    text-transform: uppercase; 
+}
+
+.text .der{
+    background-color: blue;
+    border: 10px;
+    color: #fff;
+}
+
+footer{
+    padding: 10px;
+    margin-top: 25px;
+    background: blue;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+footer:hover{
+    background: #35424a;
+    transition: background-color 1.6s ease-out;
+}
+
+
+@media (max-width:568px) {
+    .ph1, .ph2, .ph3, .ph4, .ph5, .ph6{
+        background-attachment: scroll;
+    }
+
+    .text{
+        letter-spacing: 2px;
+        font-size: 26px;
+    }
+
+    .container h1{
+        font-size: 20px;
+    }
+}

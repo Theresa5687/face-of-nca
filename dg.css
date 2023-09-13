@@ -1,0 +1,128 @@
+/* Body flex - box styling */
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+body{
+    background: darkgray;
+    margin: 30px 50px;
+    line-height: 1.3;
+}
+
+.wrapper{
+    text-align: center;
+    text-transform: uppercase;
+    background: blue;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 50px;
+    border-bottom: gold 5px solid;
+}
+
+.wrapper:hover{
+    background: #353535;
+    transition: background-color 1.6s ease-out;
+}
+
+/* Top  container */
+.top-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showit showit ab-klu-a'
+    'showit showit ab-klu-b';
+}
+
+/* Showit*/
+.showit{
+    grid-area: showit;
+    min-height: 200px;
+    background: url(dg6.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 10px;
+    box-shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
+}
+
+.showit h2{
+    font-size: 25px;
+    margin-bottom: 0;
+    color: #111;
+}
+
+.top-box{
+    background: #ddd;
+    margin-top: 10px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
+    color: #111;
+    padding: 0.6rem 1.2rem;
+}
+
+.ab-klu-a{
+    grid-area: ab-klu-a;
+}
+.ab-klu-b{
+    grid-area: ab-klu-b;
+}
+
+.boxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box{
+    background: #ddd;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: 4 5px 5px rgb(104, 104, 104, 0.8);
+    margin-top: 15px;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span a{
+    text-decoration: none;
+    color: #333;
+}
+
+span a:hover{
+    color: blue;
+}
+
+footer{
+    padding: 15px;
+    margin-top: 25px;
+    background: blue;
+    text-align: center;
+    color: #fff;
+}
+
+footer:hover{
+    background: #35424a;
+    transition: background-color 1.6s ease-in-out;
+}
+
+@media(max-width: 700px){
+    .top-container{
+        grid-template-areas: 'showit showit'
+        'ab-klu-a ab-klu-b';
+    }
+
+    .showit h2{
+        font-size: 20px;
+    }
+}
